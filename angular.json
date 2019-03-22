@@ -25,7 +25,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/sortable/dist/html5sortable.es.js"
+            ]
           },
           "configurations": {
             "production": {
