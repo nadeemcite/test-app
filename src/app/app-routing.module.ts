@@ -13,8 +13,8 @@ const routes: Routes = [
     loadChildren: './messages/messages.module#MessagesModule'
   },{
     path:'',
-    redirectTo:'',
-    pathMatch:'full'
+    redirectTo:'orders',
+   // pathMatch:'full'
   }
 ]
 

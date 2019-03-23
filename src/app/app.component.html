@@ -1,7 +1,7 @@
 <mat-drawer-container class="container">
 	<mat-drawer #drawer classs="sidenav">
 		<button color="primary" mat-button routerLink="/customers">Customers</button>
-		<button color="primary" mat-button routerLink="/Orders">Orders</button>
+		<button color="primary" mat-button routerLink="/orders">Orders</button>
 		<button color="primary" mat-button routerLink="/messages">Messages</button>
 	</mat-drawer>
 	<div class="sidenav-content">
@@ -11,9 +11,17 @@
           <mat-icon>menu</mat-icon>
         </button>
         <span>Title</span>
-        <span class="spacer">
-          <mat-icon>favorite</mat-icon>
-        </span>
+        <span class="spacer"></span>
+        <mat-icon>favorite</mat-icon>
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>publish</mat-icon>
+            <span>Share</span>
+          </button>
+        </mat-menu>
       </mat-toolbar-row>
     </mat-toolbar>
     <router-outlet></router-outlet>

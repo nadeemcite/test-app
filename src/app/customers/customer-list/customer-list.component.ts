@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
-  templateUrl:"customers-list.component.html"
+  templateUrl:"./customer-list.component.html"
 })
 export class CustomersListComponent{
 

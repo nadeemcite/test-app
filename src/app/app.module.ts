@@ -10,6 +10,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatMenuModule } from '@angular/material/menu';
 import { AppRoutingModule } from './app-routing.module';
 import { CustomersModule } from './customers/customers.module';
 import { MessagesModule } from './messages/messages.module';
@@ -27,6 +28,7 @@ import { OrdersModule } from './orders/orders.module';
     MatIconModule,
     AppRoutingModule,
     MatToolbarModule,
+    MatMenuModule,
     CustomersModule,
     MessagesModule,
     OrdersModule
