@@ -1,5 +1,21 @@
-<hello name="{{ name }}"></hello>
-<p (click)="onClick()">
-  Start editing to see some magic happen :)
-</p>
-<my-sortable></my-sortable>
+<mat-drawer-container class="container">
+	<mat-drawer #drawer classs="sidenav">
+		<button color="primary" mat-button routerLink="/customers">Customers</button>
+		<button color="primary" mat-button routerLink="/Orders">Orders</button>
+		<button color="primary" mat-button routerLink="/messages">Messages</button>
+	</mat-drawer>
+	<div class="sidenav-content">
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <button mat-icon-button (click)="drawer.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span>Title</span>
+        <span class="spacer">
+          <mat-icon>favorite</mat-icon>
+        </span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </div>
+</mat-drawer-container>
