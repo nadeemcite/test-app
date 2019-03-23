@@ -15,6 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { CustomersModule } from './customers/customers.module';
 import { MessagesModule } from './messages/messages.module';
 import { OrdersModule } from './orders/orders.module';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   imports: [
@@ -29,9 +30,11 @@ import { OrdersModule } from './orders/orders.module';
     AppRoutingModule,
     MatToolbarModule,
     MatMenuModule,
+    MatFormFieldModule,
     CustomersModule,
     MessagesModule,
-    OrdersModule
+    OrdersModule,
+    
   ],
   declarations: [AppComponent, HelloComponent],
   bootstrap: [AppComponent]
